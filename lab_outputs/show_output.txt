@@ -1,0 +1,88 @@
+[0mdata.ibm_network_vlan.csc_private_vlan_1:
+  id = 2501815
+  name = testprvvlan01
+  number = 1278
+  router_hostname = bcr02a.dal09
+  subnets.# = 1
+  subnets.0.cidr = 26
+  subnets.0.gateway = 10.142.39.1
+  subnets.0.id = 853737
+  subnets.0.subnet = 10.142.39.0/26
+  subnets.0.subnet_size = 64
+  subnets.0.subnet_type = ADDITIONAL_PRIMARY
+  virtual_guests.# = 1
+  virtual_guests.0.domain = example.com
+  virtual_guests.0.hostname = vm3
+  virtual_guests.0.id = 66469999
+data.ibm_network_vlan.csc_public_vlan_1:
+  id = 2501813
+  name = testpubvlan01
+  number = 1228
+  router_hostname = fcr02a.dal09
+  subnets.# = 1
+  subnets.0.cidr = 28
+  subnets.0.gateway = 169.55.47.145
+  subnets.0.id = 969067
+  subnets.0.subnet = 169.55.47.144/28
+  subnets.0.subnet_size = 16
+  subnets.0.subnet_type = ADDITIONAL_PRIMARY
+  virtual_guests.# = 1
+  virtual_guests.0.domain = example.com
+  virtual_guests.0.hostname = vm3
+  virtual_guests.0.id = 66469999
+ibm_compute_ssh_key.csc_lab_ssh_key:
+  id = 1352517
+  fingerprint = 32:e8:4d:ee:3c:7d:83:28:e7:1e:72:28:58:4e:d7:89
+  label = csc_lab_ssh_key_YOURUSERNAME
+  notes = SSH key to be used for CSC Infratrsucture as Code lab session
+  public_key = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC09MfWGX3O2y8LcMPd8Ql5Ap746VnyI0DzZKfqN/M9E4lmgRGxqj3NkOO2946zyaLJ02J0q6S3no5a7neC5DfBTDHnASE1pTmCtOP1iEzmT08SozHQJiRx/xHcHC8WlAh3rZeFIVjb0As4EbT/DyaSMdkHeKeCOXauVK1/QMFEuNIbk5Cag7H5tRXb+44nJ4cgYvO2dsmgsCnm1NJqu49t3Ci5AUt+aYDMxRrvM7+x55F8xE/Ajo5wCdlpROac6j2gsc2x+R9uS40TcgFZE2dQKnHP6VbQhilRmrbI3ao6bqBfclZSoEq9U5jXPzhlCqsETOdtvucHeWnX5TMQ+D27 root@ubuntu1
+ibm_compute_vm_instance.csc_vm_1:
+  id = 72847777
+  block_storage_ids.# = 0
+  cores = 1
+  datacenter = dal09
+  dedicated_acct_host_only = false
+  disks.# = 2
+  disks.0 = 25
+  disks.1 = 50
+  domain = ibm.cloud
+  file_storage_ids.# = 0
+  hostname = csc-vm-YOURINITIALS
+  hourly_billing = true
+  ip_address_id = 123893745
+  ip_address_id_private = 123894055
+  ipv4_address = 169.55.47.148
+  ipv4_address_private = 10.142.39.35
+  ipv6_enabled = false
+  ipv6_static_enabled = false
+  local_disk = false
+  memory = 1024
+  network_speed = 100
+  notes = 
+  os_reference_code = UBUNTU_18_64
+  private_interface_id = 43210763
+  private_network_only = false
+  private_security_group_ids.# = 0
+  private_subnet = 10.142.39.0/26
+  private_subnet_id = 853737
+  private_vlan_id = 2501815
+  public_bandwidth_unlimited = false
+  public_interface_id = 43210765
+  public_security_group_ids.# = 0
+  public_subnet = 169.55.47.144/28
+  public_subnet_id = 969067
+  public_vlan_id = 2501813
+  secondary_ip_addresses.# = 0
+  ssh_key_ids.# = 1
+  ssh_key_ids.1352517 = 1352517
+  tags.# = 1
+  tags.2925249934 = csc_vms
+  transient = false
+  wait_time_minutes = 90
+[0m
+
+Outputs:
+
+vm_id = 72847777
+vm_ipv4_address = 169.55.47.148
+vm_ipv4_address_private = 10.142.39.35[0m

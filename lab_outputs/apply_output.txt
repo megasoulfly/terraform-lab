@@ -1,0 +1,197 @@
+[0m[1mibm_compute_ssh_key.csc_lab_ssh_key: Refreshing state... (ID: 1351255)[0m
+[0m[1mdata.ibm_network_vlan.csc_public_vlan_1: Refreshing state...[0m
+[0m[1mdata.ibm_network_vlan.csc_private_vlan_1: Refreshing state...[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Refreshing state... (ID: 72698591)[0m
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  [32m+[0m create
+[0m
+Terraform will perform the following actions:
+
+[32m  [32m+[0m [32mibm_compute_ssh_key.csc_lab_ssh_key
+[0m      id:                           <computed>
+      fingerprint:                  <computed>
+      label:                        "csc_lab_ssh_key_YOURUSERNAME"
+      notes:                        "SSH key to be used for CSC Infratrsucture as Code lab session"
+      public_key:                   "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC09MfWGX3O2y8LcMPd8Ql5Ap746VnyI0DzZKfqN/M9E4lmgRGxqj3NkOO2946zyaLJ02J0q6S3no5a7neC5DfBTDHnASE1pTmCtOP1iEzmT08SozHQJiRx/xHcHC8WlAh3rZeFIVjb0As4EbT/DyaSMdkHeKeCOXauVK1/QMFEuNIbk5Cag7H5tRXb+44nJ4cgYvO2dsmgsCnm1NJqu49t3Ci5AUt+aYDMxRrvM7+x55F8xE/Ajo5wCdlpROac6j2gsc2x+R9uS40TcgFZE2dQKnHP6VbQhilRmrbI3ao6bqBfclZSoEq9U5jXPzhlCqsETOdtvucHeWnX5TMQ+D27 root@ubuntu1"
+[0m
+[0m[32m  [32m+[0m [32mibm_compute_vm_instance.csc_vm_1
+[0m      id:                           <computed>
+      block_storage_ids.#:          <computed>
+      cores:                        "1"
+      datacenter:                   "dal09"
+      disks.#:                      "2"
+      disks.0:                      "25"
+      disks.1:                      "50"
+      domain:                       "ibm.cloud"
+      file_storage_ids.#:           <computed>
+      hostname:                     "csc-vm-YOURINITIALS"
+      hourly_billing:               "true"
+      ip_address_id:                <computed>
+      ip_address_id_private:        <computed>
+      ipv4_address:                 <computed>
+      ipv4_address_private:         <computed>
+      ipv6_address:                 <computed>
+      ipv6_address_id:              <computed>
+      ipv6_enabled:                 "false"
+      ipv6_static_enabled:          "false"
+      local_disk:                   "false"
+      memory:                       "1024"
+      network_speed:                "100"
+      os_reference_code:            "UBUNTU_18_64"
+      private_interface_id:         <computed>
+      private_network_only:         "false"
+      private_security_group_ids.#: <computed>
+      private_subnet:               <computed>
+      private_subnet_id:            <computed>
+      private_vlan_id:              "2501815"
+      public_bandwidth_limited:     <computed>
+      public_bandwidth_unlimited:   "false"
+      public_interface_id:          <computed>
+      public_ipv6_subnet:           <computed>
+      public_ipv6_subnet_id:        <computed>
+      public_security_group_ids.#:  <computed>
+      public_subnet:                <computed>
+      public_subnet_id:             <computed>
+      public_vlan_id:               "2501813"
+      secondary_ip_addresses.#:     <computed>
+      ssh_key_ids.#:                <computed>
+      tags.#:                       "1"
+      tags.2925249934:              "csc_vms"
+      wait_time_minutes:            "90"
+[0m
+[0m
+[0m[1mPlan:[0m 2 to add, 0 to change, 0 to destroy.[0m
+
+[0m[1mDo you want to perform these actions?[0m
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  [1mEnter a value:[0m [0m
+[0m[1mibm_compute_ssh_key.csc_lab_ssh_key: Creating...[0m
+  fingerprint: "" => "<computed>"
+  label:       "" => "csc_lab_ssh_key_YOURUSERNAME"
+  notes:       "" => "SSH key to be used for CSC Infratrsucture as Code lab session"
+  public_key:  "" => "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC09MfWGX3O2y8LcMPd8Ql5Ap746VnyI0DzZKfqN/M9E4lmgRGxqj3NkOO2946zyaLJ02J0q6S3no5a7neC5DfBTDHnASE1pTmCtOP1iEzmT08SozHQJiRx/xHcHC8WlAh3rZeFIVjb0As4EbT/DyaSMdkHeKeCOXauVK1/QMFEuNIbk5Cag7H5tRXb+44nJ4cgYvO2dsmgsCnm1NJqu49t3Ci5AUt+aYDMxRrvM7+x55F8xE/Ajo5wCdlpROac6j2gsc2x+R9uS40TcgFZE2dQKnHP6VbQhilRmrbI3ao6bqBfclZSoEq9U5jXPzhlCqsETOdtvucHeWnX5TMQ+D27 root@ubuntu1"[0m
+[0m[1mibm_compute_ssh_key.csc_lab_ssh_key: Creation complete after 4s (ID: 1352517)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Creating...[0m
+  block_storage_ids.#:          "" => "<computed>"
+  cores:                        "" => "1"
+  datacenter:                   "" => "dal09"
+  disks.#:                      "" => "2"
+  disks.0:                      "" => "25"
+  disks.1:                      "" => "50"
+  domain:                       "" => "ibm.cloud"
+  file_storage_ids.#:           "" => "<computed>"
+  hostname:                     "" => "csc-vm-YOURINITIALS"
+  hourly_billing:               "" => "true"
+  ip_address_id:                "" => "<computed>"
+  ip_address_id_private:        "" => "<computed>"
+  ipv4_address:                 "" => "<computed>"
+  ipv4_address_private:         "" => "<computed>"
+  ipv6_address:                 "" => "<computed>"
+  ipv6_address_id:              "" => "<computed>"
+  ipv6_enabled:                 "" => "false"
+  ipv6_static_enabled:          "" => "false"
+  local_disk:                   "" => "false"
+  memory:                       "" => "1024"
+  network_speed:                "" => "100"
+  os_reference_code:            "" => "UBUNTU_18_64"
+  private_interface_id:         "" => "<computed>"
+  private_network_only:         "" => "false"
+  private_security_group_ids.#: "" => "<computed>"
+  private_subnet:               "" => "<computed>"
+  private_subnet_id:            "" => "<computed>"
+  private_vlan_id:              "" => "2501815"
+  public_bandwidth_limited:     "" => "<computed>"
+  public_bandwidth_unlimited:   "" => "false"
+  public_interface_id:          "" => "<computed>"
+  public_ipv6_subnet:           "" => "<computed>"
+  public_ipv6_subnet_id:        "" => "<computed>"
+  public_security_group_ids.#:  "" => "<computed>"
+  public_subnet:                "" => "<computed>"
+  public_subnet_id:             "" => "<computed>"
+  public_vlan_id:               "" => "2501813"
+  secondary_ip_addresses.#:     "" => "<computed>"
+  ssh_key_ids.#:                "" => "1"
+  ssh_key_ids.1352517:          "" => "1352517"
+  tags.#:                       "" => "1"
+  tags.2925249934:              "" => "csc_vms"
+  wait_time_minutes:            "" => "90"[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (10s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (20s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (30s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (40s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (50s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (1m0s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (1m10s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (1m20s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (1m30s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (1m40s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (1m50s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (2m0s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (2m10s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (2m20s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (2m30s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (2m40s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (2m50s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (3m0s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (3m10s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (3m20s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (3m30s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (3m40s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (3m50s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (4m0s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (4m10s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (4m20s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (4m30s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (4m40s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (4m50s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (5m0s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (5m10s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (5m20s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (5m30s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Provisioning with 'file'...[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (5m40s elapsed)[0m[0m
+[0m[1mibm_compute_vm_instance.csc_vm_1: Provisioning with 'remote-exec'...[0m[0m
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): Connecting to remote host via SSH...
+ibm_compute_vm_instance.csc_vm_1 (remote-exec):   Host: 169.55.47.148
+ibm_compute_vm_instance.csc_vm_1 (remote-exec):   User: root
+ibm_compute_vm_instance.csc_vm_1 (remote-exec):   Password: false
+ibm_compute_vm_instance.csc_vm_1 (remote-exec):   Private key: true
+ibm_compute_vm_instance.csc_vm_1 (remote-exec):   SSH Agent: true
+ibm_compute_vm_instance.csc_vm_1 (remote-exec):   Checking Host Key: false
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): Connected!
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): [1mDisk /dev/xvdc: 50 GiB, 53687091200 bytes, 104857600 sectors
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): [0mUnits: sectors of 1 * 512 = 512 bytes
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): Sector size (logical/physical): 512 bytes / 512 bytes
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): I/O size (minimum/optimal): 512 bytes / 512 bytes
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): mke2fs 1.44.1 (24-Mar-2018)
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): Creating filesystem with 13107200 4k blocks and 3276800 inodes
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): Filesystem UUID: c3742869-31ed-40bc-abaf-cbd2ab21291a
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): Superblock backups stored on blocks:
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): 	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): 	4096000, 7962624, 11239424
+[0m[0m
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): Allocating group tables:   0/400       done
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): Writing inode tables:   0/400       done
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): Creating journal (65536 blocks):
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): done
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): Writing superblocks and filesystem accounting information:   0/400       
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): done
+[0m[0m
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): Filesystem      Size  Used Avail Use% Mounted on
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): /dev/xvdc        49G   53M   47G   1% /mnt/newvar
+[0m[1mibm_compute_vm_instance.csc_vm_1: Still creating... (5m50s elapsed)[0m[0m
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): UUID="c3742869-31ed-40bc-abaf-cbd2ab21291a"  /var ext4 defaults 0 2
+[0m[0mibm_compute_vm_instance.csc_vm_1 (remote-exec): Shutdown scheduled for Thu 2019-02-28 10:56:15 UTC, use 'shutdown -c' to cancel.
+[0m[1mibm_compute_vm_instance.csc_vm_1: Creation complete after 5m53s (ID: 72847777)[0m[0m
+[0m[1m[32m
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.[0m
+[0m[1m[32m
+Outputs:
+
+vm_id = 72847777
+vm_ipv4_address = 169.55.47.148
+vm_ipv4_address_private = 10.142.39.35[0m
